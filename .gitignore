@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Sensitive config
+config.py
+
+# Folders - ignore contents but keep folder
+logs/*
+!logs/.gitkeep
+
+sessions/*
+!sessions/.gitkeep
+
+# Fully ignore these
+__pycache__/
+.cursor/

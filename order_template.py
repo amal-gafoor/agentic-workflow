@@ -1,0 +1,15 @@
+ORDER_TEMPLATE = """
+Please fill the order details below:
+
+NAME:
+ADDRESS:
+CITY:
+DISTRICT:
+STATE:
+PINCODE:
+NUMBER:
+
+PHONE MODEL:
+PRODUCT:
+COLOUR:
+"""
