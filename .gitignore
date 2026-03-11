@@ -5,7 +5,7 @@
 .env
 
 # Sensitive config
-config.py
+
 
 # Folders - ignore contents but keep folder
 logs/*
