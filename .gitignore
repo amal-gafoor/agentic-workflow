@@ -17,3 +17,5 @@ sessions/*
 # Fully ignore these
 __pycache__/
 .cursor/
+
+repomix-output.xml
