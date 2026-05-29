@@ -3,7 +3,10 @@ from rag_pipeline.vector_store import build_vector_store,load_vector_store
 # from rag_pipeline.compressor import compress
 # from rag_pipeline.generator import generator
 # from rag_pipeline.reranker import rerank
-from memory_store import load_memory, save_memory
+from memory_store import (
+    load_memory, save_memory,
+      add_message, get_history,
+      clear_scratchpad)
 from rag_pipeline.embeddings import get_embedding_model
 # from intent_router import classify_intent,rewrite_query
 # from order_services import start_order, handle_order_submission,check_order_status
@@ -14,7 +17,7 @@ from agent.agent import run_react_agent
 def process_message(user_id, query):
     try:
         session = load_memory(user_id)
-        history = session['history']
+        history = get_history(session)
 
         # ReAct agent hnadles everything
         response = run_react_agent(
@@ -24,8 +27,9 @@ def process_message(user_id, query):
         ) 
 
         #save memory
-        session['history'].append({"role": "user", "content": query})
-        session['history'].append({"role": "assistant", "content": response})
+        add_message(session, "user", query)
+        add_message(session, "assistant", response)
+        clear_scratchpad(session)
         save_memory(user_id, session)
 
         return response
