@@ -7,6 +7,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Apple smartphone users
 
 Product: Apple Clear Transparent Case 
@@ -16,7 +17,9 @@ Features:
 - Anti-yellow coating 
 - Scratch resistant surface 
 - Slim fit design 
-- Lightweight build Warranty: 1 year Target 
+- Lightweight build 
+Warranty: 1 year Target 
+stock availability - 6
 Audience: Apple smartphone users
 
 Product: Apple Rugged Armor Case 
@@ -28,6 +31,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 3
 Target Audience: Apple smartphone users
 
 Product: Apple Leather Finish Case 
@@ -39,6 +43,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 0
 Target Audience: Apple smartphone users
 
 Product: Apple Wallet Case 
@@ -50,6 +55,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 2
 Target Audience: Apple smartphone users
 
 Product: Samsung Silicone Case 
@@ -61,6 +67,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Samsung smartphone users
 
 Product: Samsung Clear Transparent Case 
@@ -72,6 +79,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Samsung smartphone users
 
 Product: Samsung Rugged Armor Case 
@@ -83,6 +91,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 4
 Target Audience: Samsung smartphone users
 
 Product: Samsung Leather Finish Case 
@@ -94,6 +103,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 4
 Target Audience: Samsung smartphone users
 
 Product: Samsung Wallet Case 
@@ -105,6 +115,7 @@ Features:
  Full body protection 
  - Durable stitching 
  Warranty: 1 year 
+ stock availability - 4
  Target Audience: Samsung smartphone users
 
 Product: Xiaomi Silicone Case 
@@ -116,6 +127,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Xiaomi smartphone users
 
 Product: Xiaomi Clear Transparent Case 
@@ -127,6 +139,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Xiaomi smartphone users
 
 Product: Xiaomi Rugged Armor Case 
@@ -138,6 +151,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 20
 Target Audience: Xiaomi smartphone users
 
 Product: Xiaomi Leather Finish Case 
@@ -149,6 +163,7 @@ Features:
 Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 4
 Target Audience: Xiaomi smartphone users
 
 Product: Xiaomi Wallet Case 
@@ -159,8 +174,9 @@ Features:
 - Stand functionality 
 - Full body protection 
 - Durable stitching 
-Warranty: 1 year Target Audience: Xiaomi
-smartphone users
+Warranty: 1 year 
+stock availability - 8
+Target Audience: Xiaomi smartphone users
 
 Product: OnePlus Silicone Case 
 Price: $29 
@@ -170,6 +186,7 @@ Features: - Soft-touch silicone finish
 - Slim and lightweight design 
 - Wireless charging compatible
 Warranty: 1 year 
+stock availability - 8
 Target Audience: OnePlus smartphone users
 
 Product: OnePlus Clear Transparent Case 
@@ -181,6 +198,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 0
 Target Audience: OnePlus smartphone users
 
 Product: OnePlus Rugged Armor Case 
@@ -192,6 +210,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 42
 Target Audience: OnePlus smartphone users
 
 Product: OnePlus Leather Finish Case 
@@ -203,6 +222,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 4
 Target Audience: OnePlus smartphone users
 
 Product: OnePlus Wallet Case 
@@ -213,7 +233,8 @@ Features:
 - Stand functionality 
 - Full body protection 
 - Durable stitching 
-Warranty: 1 year 
+Warranty: 1 year 9
+stock availability - 4
 Target Audience: OnePlus smartphone users
 
 Product: Google Silicone Case 
@@ -225,6 +246,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Google smartphone users
 
 Product: Google Clear Transparent Case 
@@ -236,6 +258,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Google smartphone users
 
 Product: Google Rugged Armor Case 
@@ -247,6 +270,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 20
 Target Audience: Google smartphone users
 
 Product: Google Leather Finish Case 
@@ -258,6 +282,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 4
 Target Audience: Google smartphone users
 
 Product: Google Wallet Case 
@@ -269,6 +294,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Google smartphone users
 
 Product: Oppo Silicone Case 
@@ -279,8 +305,9 @@ Features:
 - Raised edges for screen & camera 
 - Slim and lightweight design 
 - Wireless charging compatible 
-Warranty: 1
-year Target Audience: Oppo smartphone users
+Warranty: 1 year 
+stock availability - 8
+Target Audience: Oppo smartphone users
 
 Product: Oppo Clear Transparent Case 
 Price: $25 
@@ -291,6 +318,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Oppo smartphone users
 
 Product: Oppo Rugged Armor Case 
@@ -302,6 +330,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 20
 Target Audience: Oppo smartphone users
 
 Product: Oppo Leather Finish Case 
@@ -313,6 +342,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Oppo smartphone users
 
 Product: Oppo Wallet Case 
@@ -324,6 +354,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Oppo smartphone users
 
 Product: Vivo Silicone Case 
@@ -334,8 +365,9 @@ Features:
 - Raised edges for screen & camera 
 - Slim and lightweight design 
 - Wireless charging compatible 
-Warranty: 1
-year Target Audience: Vivo smartphone users
+Warranty: 1 year 
+stock availability - 8
+Target Audience: Vivo smartphone users
 
 Product: Vivo Clear Transparent Case 
 Price: $25 
@@ -346,6 +378,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Vivo smartphone users
 
 Product: Vivo Rugged Armor Case 
@@ -357,6 +390,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 20
 Target Audience: Vivo smartphone users
 
 Product: Vivo Leather Finish Case 
@@ -368,6 +402,7 @@ Features:
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year 
+stock availability - 4
 Target Audience: Vivo smartphone users
 
 Product: Vivo Wallet Case 
@@ -379,6 +414,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Vivo smartphone users
 
 Product: Realme Silicone Case 
@@ -390,6 +426,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible 
 Warranty: 1 year 
+stock availability - 8
 Target Audience: Realme smartphone users
 
 Product: Realme Clear Transparent Case 
@@ -400,6 +437,7 @@ Features: - Crystal clear back
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Realme smartphone users
 
 Product: Realme Rugged Armor Case 
@@ -411,6 +449,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year
+stock availability - 20
 Target Audience: Realme smartphone users
 
 Product: Realme Leather Finish Case 
@@ -421,6 +460,7 @@ Features: - Premium leather texture
 - Scratch resistant exterior 
 - Professional premium look 
 Warranty: 1 year
+stock availability - 4
 Target Audience: Realme smartphone users
 
 Product: Realme Wallet Case 
@@ -432,6 +472,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Realme smartphone users
 
 Product: Huawei Silicone Case 
@@ -443,6 +484,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible 
 Warranty: 1 year 
+stock availability - 8
 Target Audience: Huawei smartphone users
 
 Product: Huawei Clear Transparent Case 
@@ -454,6 +496,7 @@ Features:
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Huawei smartphone users
 
 Product: Huawei Rugged Armor Case 
@@ -465,6 +508,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers 
 Warranty: 1 year 
+stock availability - 20
 Target Audience: Huawei smartphone users
 
 Product: Huawei Leather Finish Case 
@@ -475,7 +519,8 @@ Features:
 - Elegant slim profile 
 - Scratch resistant exterior 
 - Professional premium look 
-Warranty: 1 year
+Warranty: 1 year 
+stock availability - 6
 Target Audience: Huawei smartphone users
 
 Product: Huawei Wallet Case 
@@ -487,6 +532,7 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Huawei smartphone users
 
 Product: Motorola Silicone Case 
@@ -498,6 +544,7 @@ Features:
 - Slim and lightweight design 
 - Wireless charging compatible
 Warranty: 1 year 
+stock availability - 8
 Target Audience: Motorola smartphone users
 
 Product: Motorola Clear Transparent Case 
@@ -507,6 +554,7 @@ Features: - Crystal clear back
 - Slim fit design 
 - Lightweight build 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Motorola smartphone users
 
 Product: Motorola Rugged Armor Case 
@@ -518,6 +566,7 @@ Features:
 - Dust-resistant frame 
 - Impact-absorbing layers
 Warranty: 1 year 
+stock availability - 20
 Target Audience: Motorola smartphone users
 
 Product: Motorola Leather Finish Case 
@@ -528,7 +577,8 @@ Features:
 - Elegant slim profile 
 - Scratch resistant exterior 
 - Professional premium look 
-Warranty: 1 year
+Warranty: 1 year 
+stock availability - 4
 Target Audience: Motorola smartphone users
 
 Product: Motorola Wallet Case 
@@ -540,4 +590,5 @@ Features:
 - Full body protection 
 - Durable stitching 
 Warranty: 1 year 
+stock availability - 6
 Target Audience: Motorola smartphone users
