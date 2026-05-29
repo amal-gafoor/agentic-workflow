@@ -1,0 +1,76 @@
+my-app/
+│
+├── backend/
+│   ├── app.py
+│   ├── .env
+│   ├── requirements.txt
+│   └── src/
+│       ├── config/
+│       │   ├── __init__.py
+│       │   ├── db.py                    # Supabase connection
+│       │   └── redis.py                 # Redis connection
+│       │
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── user.py                  # users table
+│       │   └── blacklisted_token.py     # removed (Redis handles this)
+│       │
+│       ├── services/
+│       │   ├── __init__.py
+│       │   ├── user_service.py          # CRUD operations
+│       │   ├── auth_service.py          # logout, blacklist
+│       │   └── google_auth_service.py   # google OAuth flow
+│       │
+│       ├── controllers/
+│       │   ├── __init__.py
+│       │   ├── user_controller.py       # /users endpoints
+│       │   └── auth_controller.py       # /auth endpoints
+│       │
+│       ├── routes/
+│       │   └── __init__.py              # registers all routers
+│       │
+│       ├── middlewares/
+│       │   ├── __init__.py
+│       │   ├── auth_middleware.py       # protect routes via JWT
+│       │   ├── logger.py                # log every request
+│       │   └── error_handler.py         # catch all errors
+│       │
+│       └── utils/
+│           ├── __init__.py
+│           ├── jwt.py                   # generate & verify JWT
+│           └── response.py              # standard response shape
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   └── src/
+│       ├── pages/
+│       │   ├── Login.jsx                # Google login button
+│       │   ├── Dashboard.jsx            # reads token from URL
+│       │   └── Profile.jsx             # shows user info
+│       │
+│       ├── components/
+│       │   ├── GoogleLoginButton.jsx    # reusable button
+│       │   └── ProtectedRoute.jsx       # blocks unauth users
+│       │
+│       ├── services/
+│       │   ├── auth.js                  # login, logout functions
+│       │   └── api.js                   # all API call functions
+│       │
+│       ├── store/
+│       │   └── authStore.js             # stores user & token state
+│       │
+│       ├── utils/
+│       │   └── token.js                 # get/set/remove token
+│       │
+│       ├── App.jsx                      # routes setup
+│       └── main.jsx                     # entry point
+│
+└── libs/                                # shared between frontend & backend
+    ├── validators/
+    │   └── user_validators.py           # email, age validation
+    ├── constants/
+    │   └── index.py                     # roles, error messages
+    └── types/
+        └── user.py                      # shared User type
