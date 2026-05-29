@@ -3,7 +3,7 @@ from rag_pipeline.retriever import retriever
 from rag_pipeline.reranker import rerank
 from rag_pipeline.compressor import compress
 
-def search_product(query: str, user_id: str = "agent") -> str:
+def search_products(query: str, user_id: str = "agent") -> str:
      """
     Tool: search_products
     Searches product knowledge base using the full RAG pipeline.
