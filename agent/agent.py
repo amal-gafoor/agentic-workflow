@@ -1,13 +1,11 @@
+# agent/agent.py
+
 import re
 from llm_wrapper import agent_llm_call
 from agent.tool_registry import TOOL_REGISTRY, call_tool
 
 
-# ─────────────────────────────────────────────
-# SYSTEM PROMPT
-# ─────────────────────────────────────────────
 def build_system_prompt() -> str:
-    # Dynamically build tool list from registry
     tool_descriptions = ""
     for i, (name, data) in enumerate(TOOL_REGISTRY.items(), 1):
         tool_descriptions += f"{i}. {name} — {data['description']}\n"
@@ -30,7 +28,7 @@ FINAL ANSWER: <your friendly, clear answer>
 
 Rules:
 - Always write THOUGHT before ACTION or FINAL ANSWER
-- Never guess product prices, stock, or policy details — always use a tool first
+- Never guess product prices or policy details — always use a tool first
 - If question is about both product AND policy, call both tools one at a time
 - Base your FINAL ANSWER only on what tools returned
 - Keep FINAL ANSWER short, friendly, and helpful
@@ -38,47 +36,32 @@ Rules:
 """
 
 
-# ─────────────────────────────────────────────
-# REACT LOOP
-# ─────────────────────────────────────────────
 def run_react_agent(
     user_query: str,
     user_id: str = "agent",
     history: list = None,
     max_iterations: int = 6
 ) -> str:
-    """
-    ReAct loop — Reasoning + Acting.
 
-    Each iteration:
-    1. LLM thinks and decides what to do
-    2. If FINAL ANSWER -> return it
-    3. If ACTION -> call tool -> feed observation back
-    4. Repeat until FINAL ANSWER or max_iterations
-    """
+    history = history or []
 
-    # Only pass last 6 messages to keep context clean
-    history_messages = []
-    if history:
-        for msg in history[-6:]:
-            history_messages.append({
-                "role":    msg["role"],
-                "content": msg["content"]
-            })
+    # Last 6 messages for context
+    history_messages = [
+        {"role": msg["role"], "content": msg["content"]}
+        for msg in history[-6:]
+    ]
 
-    # Initial turns:
-    # system prompt + past history + current query
+    # system prompt + history + current query
     turns = (
         [{"role": "system", "content": build_system_prompt()}]
         + history_messages
         + [{"role": "user", "content": user_query}]
     )
 
-    # ReAct loop
     for iteration in range(max_iterations):
         print(f"\n[Agent] Iteration {iteration + 1}")
 
-        # Step 1 — call LLM with full turns
+        # Step 1 — call LLM
         llm_output = agent_llm_call(
             user_id=user_id,
             messages=turns,
@@ -91,17 +74,15 @@ def run_react_agent(
 
         print(f"[Agent] LLM:\n{llm_output}\n")
 
-        # Step 2 — check for FINAL ANSWER
+        # Step 2 — FINAL ANSWER check
         if "FINAL ANSWER:" in llm_output:
-            answer = llm_output.split("FINAL ANSWER:")[-1].strip()
-            return answer
+            return llm_output.split("FINAL ANSWER:")[-1].strip()
 
         # Step 3 — parse ACTION and INPUT
         action_match = re.search(r"ACTION:\s*(\w+)", llm_output)
         input_match  = re.search(r"INPUT:\s*(.+)",   llm_output)
 
         if not action_match or not input_match:
-            # LLM did not follow format — nudge it
             turns.append({"role": "assistant", "content": llm_output})
             turns.append({
                 "role": "user",
@@ -110,7 +91,7 @@ def run_react_agent(
                     "THOUGHT: ...\n"
                     "ACTION: tool_name\n"
                     "INPUT: your query\n\n"
-                    "Or if you already have enough info:\n"
+                    "Or:\n"
                     "THOUGHT: ...\n"
                     "FINAL ANSWER: your answer"
                 )
@@ -122,7 +103,7 @@ def run_react_agent(
 
         print(f"[Agent] Tool: {tool_name} | Input: {tool_input}")
 
-        # Step 4 — call the tool
+        # Step 4 — call tool
         observation = call_tool(
             tool_name=tool_name,
             tool_input=tool_input,
@@ -131,8 +112,7 @@ def run_react_agent(
 
         print(f"[Agent] Observation: {observation[:200]}...")
 
-        # Step 5 — add LLM output + observation back into turns
-        # This is the agent memory within one run
+        # Step 5 — feed observation back
         turns.append({"role": "assistant", "content": llm_output})
         turns.append({
             "role": "user",
