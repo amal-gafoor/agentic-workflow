@@ -12,20 +12,20 @@ def build_system_prompt() -> str:
 
     return f"""You are a helpful customer support assistant for a phone case store.
 You answer customer questions about products and store policies.
-
+ 
 You have access to these tools:
 {tool_descriptions}
 STRICT FORMAT — follow exactly every single time:
-
+ 
 When you need information from a tool:
 THOUGHT: <your reasoning>
 ACTION: <tool_name>
 INPUT: <your search query>
-
+ 
 When you have enough information to answer:
 THOUGHT: I have enough information to answer.
 FINAL ANSWER: <your friendly, clear answer>
-
+ 
 Rules:
 - Always write THOUGHT before ACTION or FINAL ANSWER
 - Never guess product prices or policy details — always use a tool first
@@ -33,6 +33,8 @@ Rules:
 - Base your FINAL ANSWER only on what tools returned
 - Keep FINAL ANSWER short, friendly, and helpful
 - If nothing found, politely say so
+- ONE RESPONSE = ONE ACTION or ONE FINAL ANSWER — never both in the same response
+- You MUST wait for the OBSERVATION before writing FINAL ANSWER
 """
 
 
@@ -74,8 +76,29 @@ def run_react_agent(
 
         print(f"[Agent] LLM:\n{llm_output}\n")
 
-        # Step 2 — FINAL ANSWER check
-        if "FINAL ANSWER:" in llm_output:
+        has_action       = bool(re.search(r"ACTION:\s*\w+",  llm_output))
+        has_final_answer = "FINAL ANSWER:" in llm_output
+
+        # Step 2 — LLM wrote both ACTION and FINAL ANSWER in same response
+        # This means it hallucinated without waiting for observation
+        # Reject and force it to do one thing at a time
+        if has_action and has_final_answer:
+            print("[Agent] WARNING: LLM wrote ACTION and FINAL ANSWER together — rejecting")
+            turns.append({"role": "assistant", "content": llm_output})
+            turns.append({
+                "role": "user",
+                "content": (
+                    "You cannot write ACTION and FINAL ANSWER in the same response.\n"
+                    "ONE response = ONE action only.\n"
+                    "First call the tool. Wait for OBSERVATION. "
+                    "Then in the next step give your FINAL ANSWER.\n\n"
+                    "Start again — write only the ACTION and INPUT now."
+                )
+            })
+            continue
+
+        # Step 3 — clean FINAL ANSWER
+        if has_final_answer:
             return llm_output.split("FINAL ANSWER:")[-1].strip()
 
         # Step 3 — parse ACTION and INPUT
